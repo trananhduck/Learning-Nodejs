@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <!-- Link to Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Optionally, include Bootstrap JS (if you need Bootstrap components like modals, dropdowns, etc.) -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="prevPage()">Prev</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="loadPage(1)">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="loadPage(2)">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="loadPage(3)">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" onclick="nextPage()">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Welcome</h1>
+  </body>
+  <script src="./public/js/jquery-3.7.1.js"></script>
+  <script src="./public/js/main.js"></script>
+</html>

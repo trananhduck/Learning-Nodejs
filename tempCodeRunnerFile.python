@@ -1,0 +1,13 @@
+class Solution:
+    def countConsistentStrings(self, allowed: str, words: list[str]) -> int:
+        res = 0
+        for word in words:
+            word = list(set(list(word)))
+            for c in word:
+                if c not in allowed:
+                    res -= 1
+                    break
+                res += 1
+        return res
+a = Solution()
+print(a.countConsistentStrings('abcdef', ["ad","bd","aaab","baa","badab"]))
